@@ -20,7 +20,7 @@ public class Televisao {
                     + "\n2. Dados da Novela"
                     + "\n3. Dados do Ator"
                     + "\n4. Dados do Apresentador"
-                    + "\n5. Sair do Menu");
+                   + "\n5. Sair do Menu");
             opcao = JOptionPane.showInputDialog("Digite a opção desejada: ");
 
             switch (opcao) {
@@ -61,7 +61,7 @@ public class Televisao {
                     novela.setPontmedia_ibope(Double.parseDouble(JOptionPane.showInputDialog("Informe a pontuação desta novela: ")));
 
                     String classificacao = null;
-                    
+
                     if (novela.obterClassificacao() == 0)
                     {
                         classificacao = "Livre";
@@ -74,7 +74,7 @@ public class Televisao {
                     {
                         classificacao = "Para maiores de 16 anos";
                     }
-                    else if (novela.obterClassificacao() == 18)
+                    else if (novela.obterClassificacao() == 18) 
                     {
                         classificacao = "Imprópria para menores de 18 anos";
                     }
@@ -92,18 +92,18 @@ public class Televisao {
                 }
                 case "3": {
                     ator.setNome(JOptionPane.showInputDialog("Digite o nome do autor:"));
-        ator.setData_nasc(JOptionPane.showInputDialog("A data de nascimento:"));
-        ator.setEstado(JOptionPane.showInputDialog("O Estado desse autor:"));
-        ator.setCidade(JOptionPane.showInputDialog("A cidade:"));
-        ator.setEndereco(JOptionPane.showInputDialog("O endereço:"));
-        ator.setBairro(JOptionPane.showInputDialog("O bairro:"));
-        ator.setEmail(JOptionPane.showInputDialog("O e_mail:"));
-        ator.setNm_artistico(JOptionPane.showInputDialog("O nome artístico:"));
-        ator.setNovelas(Integer.parseInt(JOptionPane.showInputDialog("Informe o número de novelas que ele fez:")));
-        ator.setCache_evento(Double.parseDouble(JOptionPane.showInputDialog("Informe o cachê que ele ganha por evento:")));
-        ator.setSal_mensal(Double.parseDouble(JOptionPane.showInputDialog("Informe o salário mensal dele:")));
-        ator.setNumeroEventos(Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de eventos que ele participou no mês: ")));
-        
+                    ator.setData_nasc(JOptionPane.showInputDialog("A data de nascimento:"));
+                    ator.setEstado(JOptionPane.showInputDialog("O Estado desse autor:"));
+                    ator.setCidade(JOptionPane.showInputDialog("A cidade:"));
+                    ator.setEndereco(JOptionPane.showInputDialog("O endereço:"));
+                    ator.setBairro(JOptionPane.showInputDialog("O bairro:"));
+                    ator.setEmail(JOptionPane.showInputDialog("O e_mail:"));
+                    ator.setNm_artistico(JOptionPane.showInputDialog("O nome artístico:"));
+                    ator.setNovelas(Integer.parseInt(JOptionPane.showInputDialog("Informe o número de novelas que ele fez:")));
+                    ator.setCache_evento(Double.parseDouble(JOptionPane.showInputDialog("Informe o cachê que ele ganha por evento:")));
+                    ator.setSal_mensal(Double.parseDouble(JOptionPane.showInputDialog("Informe o salário mensal dele:")));
+                    ator.setNumeroEventos(Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de eventos que ele participou no mês: ")));
+
                     JOptionPane.showMessageDialog(null, "Dados do Ator/Atriz:\n"
                             + "Nome artístico: " + ator.getNm_artistico()
                             + "\nData de Nascimento: " + ator.getData_nasc()
@@ -137,9 +137,9 @@ public class Televisao {
                             + "\nPrograma que apresenta: " + apresentador.getProg_apresentado()
                             + "\nNúmero de eventos que participa:" + apresentador.getNumeroEvento()
                             + "\nGanhos Mensais: " + apresentador.calcularGanhos(apresentador.getNumeroEvento()));
-break;
+                    break;
                 }
-                case "5": {
+                   case "5": {
                     JOptionPane.showMessageDialog(null, "TCHAU, E MUITO OBRIGADO(A) POR TER CONHECIDO UM POUCO DA NOSSA TELEVISÃO!");
                     break;
                 }
